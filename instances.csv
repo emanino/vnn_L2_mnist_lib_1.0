@@ -13,13 +13,3 @@
 ./onnx/mnist_net_256x2_L2_1568x1.onnx,./vnnlib/instance_12.vnnlib,100
 ./onnx/mnist_net_256x2_L2_1568x1.onnx,./vnnlib/instance_13.vnnlib,100
 ./onnx/mnist_net_256x2_L2_1568x1.onnx,./vnnlib/instance_14.vnnlib,100
-./onnx/mnist_net_256x2_L2_1568x1.onnx,./vnnlib/instance_15.vnnlib,100
-./onnx/mnist_net_256x2_L2_1568x1.onnx,./vnnlib/instance_16.vnnlib,100
-./onnx/mnist_net_256x2_L2_1568x1.onnx,./vnnlib/instance_17.vnnlib,100
-./onnx/mnist_net_256x2_L2_1568x1.onnx,./vnnlib/instance_18.vnnlib,100
-./onnx/mnist_net_256x2_L2_1568x1.onnx,./vnnlib/instance_19.vnnlib,100
-./onnx/mnist_net_256x2_L2_1568x1.onnx,./vnnlib/instance_20.vnnlib,100
-./onnx/mnist_net_256x2_L2_1568x1.onnx,./vnnlib/instance_21.vnnlib,100
-./onnx/mnist_net_256x2_L2_1568x1.onnx,./vnnlib/instance_22.vnnlib,100
-./onnx/mnist_net_256x2_L2_1568x1.onnx,./vnnlib/instance_23.vnnlib,100
-./onnx/mnist_net_256x2_L2_1568x1.onnx,./vnnlib/instance_24.vnnlib,100

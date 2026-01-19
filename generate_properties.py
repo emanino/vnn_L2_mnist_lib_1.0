@@ -66,19 +66,26 @@ def vnnlib_template(n_in, n_out, bounds_in, class_out):
         lines.append("(assert (>= X_" + str(i) + " " + str(bounds_in[i,1]) + "))")
     lines.append("")
     
-    # output constraints
-    # (assert (<= Y_i Y_c))
+    # output constraints (negated!)
+    #(assert (or
+    #    (>= Y_0 Y_c)
+    #    (>= Y_1 Y_c)
+    #        ...
+    #    (>= Y_N Y_c)
+    #))
     lines.append("; Output Constraints")
+    lines.append("(assert (or")
     for i in range(n_out):
         if i == class_out:
             continue
-        lines.append("(assert (<= Y_" + str(i) + " Y_" + str(class_out) + "))")
+        lines.append("  (>= Y_" + str(i) + " Y_" + str(class_out) + ")")
+    lines.append("))")
     lines.append("")
     
     return lines
 
 # create VNN-LIB 1.0 files given the following:
-N = 25                  # number of verification instance
+N = 15                  # number of verification instance
 EPS = 0.05              # size of the inputs L2-ball
 VNN_COMP_TIMEOUT = 100  # per-instance verification timeout
 

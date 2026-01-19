@@ -4723,13 +4723,15 @@
 (assert (>= X_1567 0.05))
 
 ; Output Constraints
-(assert (<= Y_0 Y_3))
-(assert (<= Y_1 Y_3))
-(assert (<= Y_2 Y_3))
-(assert (<= Y_4 Y_3))
-(assert (<= Y_5 Y_3))
-(assert (<= Y_6 Y_3))
-(assert (<= Y_7 Y_3))
-(assert (<= Y_8 Y_3))
-(assert (<= Y_9 Y_3))
+(assert (or
+  (>= Y_0 Y_3)
+  (>= Y_1 Y_3)
+  (>= Y_2 Y_3)
+  (>= Y_4 Y_3)
+  (>= Y_5 Y_3)
+  (>= Y_6 Y_3)
+  (>= Y_7 Y_3)
+  (>= Y_8 Y_3)
+  (>= Y_9 Y_3)
+))
 
